@@ -107,3 +107,4 @@ wipe: key(backspace)
 	key(left)
 funny: "ha ha"
 #menu: key(alt)
+bundle: print(app.bundle())
