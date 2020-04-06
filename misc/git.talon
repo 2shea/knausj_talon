@@ -3,7 +3,6 @@ app: cmd.exe
 app: iTerm2
 app: Terminal
 -
-run get: insert("git ")
 git add patch: insert("git add . -p\n")
 git add: insert("git add ")
 git bisect: insert("git bisect ")
@@ -17,7 +16,7 @@ git clone clipboard:
   edit.paste()
   key(enter)
 git commit message <phrase>: insert("git commit -m '{phrase}'")
-git commit: insert("git commit")
+git commit: insert("git commit ")
 git diff (colour|color) words: insert("git diff --color-words ")
 git diff: insert("git diff ")
 git fetch: insert("git fetch")
@@ -50,6 +49,8 @@ git (author | co-author): insert("git log --format='%an <%ae>' -n1 --author=")
 git [remote] add origin: insert("git remote add origin ")
 
 # TODO: replace with defer
+run git status: insert("git status\n")
+run git branch: insert("git branch\n")
 run git commit: insert("git commit\n")
 run git diff: insert("git diff\n")
 run git diff master: insert("git diff master\n")
