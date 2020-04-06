@@ -9,16 +9,16 @@ action(user.password_fill):
 
 action(user.password_show):
 	key(alt-cmd-\)
-	
+
 action(user.password_new):
-	key(cmd-n)
-	
+	key(cmd-i)
+
 action(user.password_duplicate):
 	key(cmd-d)
-	
+
 action(user.password_edit):
 	key(cmd-e)
-	
+
 action(user.password_delete):
 	key(cmd-backspace)
 

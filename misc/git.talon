@@ -1,8 +1,7 @@
 app: /terminal/
-app: Cmd.exe
+app: cmd.exe
 app: iTerm2
 app: Terminal
-app: Sublime Text
 -
 run get: insert("git ")
 git add patch: insert("git add . -p\n")
@@ -17,6 +16,7 @@ git clone clipboard:
   insert("git clone ")
   edit.paste()
   key(enter)
+git commit message <phrase>: insert("git commit -m '{phrase}'")
 git commit: insert("git commit")
 git diff (colour|color) words: insert("git diff --color-words ")
 git diff: insert("git diff ")
@@ -33,7 +33,10 @@ git push: insert("git push")
 git push origin: insert("git push origin ")
 git push up stream": insert("git push -u origin HEAD")
 git push <phrase>: insert("git push {phrase} ")
+git push tags: insert("git push --tags")
 git rebase: insert("git rebase")
+git rebase continue: insert("git rebase --continue")
+git rebase skip: insert("git rebase --skip")
 git remove: insert("git rm ")
 git reset: insert("git reset ")
 git show: insert("git show ")
