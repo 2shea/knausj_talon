@@ -2,8 +2,8 @@ from typing import Set
 
 from talon import Module, Context, actions
 import sys
-    
-default_alphabet = 'air bat cap dip each far gust harp sit jury crunch look mad near odd pit quench red sun trap urge vest whale plex yank zip'.split(' ')
+
+default_alphabet = 'air bat cap dip each far gone harp sit jury crunch look mad near odd pit quench red sun trap urge vest whale plex yank zip'.split(' ')
 letters_string = 'abcdefghijklmnopqrstuvwxyz'
 
 default_digits = 'zero one two three four five six seven eight nine'.split(' ')
