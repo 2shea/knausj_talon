@@ -34,14 +34,14 @@ def arrows(m) -> str:
 @mod.capture
 def number(m) -> str:
     "One number key"
- 
+
 @mod.capture
 def letter(m) -> str:
-    "One letter key" 
+    "One letter key"
 
 @mod.capture
 def letters(m) -> list:
-    "Multiple letter keys" 
+    "Multiple letter keys"
 
 @mod.capture
 def symbol(m) -> str:
@@ -88,14 +88,14 @@ ctx.lists['self.symbol'] = {
     'plus': '+',
     'question mark': '?',
     'tilde': '~',
-    'bang': '!', 'exclamation point': '!', 
+    'bang': '!', 'exclamation point': '!',
     'dollar': '$', 'dollar sign': '$',
     'down score': '_', 'under score': '_',
     'colon': ':',
     'paren': '(', 'L paren': '(', 'left paren': '(',
     'R paren': ')', 'right paren': ')',
-    'brace': '{', 'left brace': '{',
-    'R brace': '}', 'right brace': '}',
+    'bracket': '{', 'left bracket': '{',
+    'R bracket': '}', 'right bracket': '}',
     'angle': '<', 'left angle': '<', 'less than': '<',
     'rangle': '>', 'R angle': '>', 'right angle': '>', 'greater than': '>',
     'star': '*', 'asterisk': '*',
@@ -138,7 +138,7 @@ def arrow(m) -> str:
     return m.arrow
 
 @ctx.capture(rule='<self.arrow>+')
-def arrows(m) -> str: 
+def arrows(m) -> str:
     return str(m)
 
 @ctx.capture(rule='{self.number}')
@@ -162,7 +162,7 @@ def function(m):
     return m.function
 
 @ctx.capture(rule='(<self.arrow> | <self.number> | <self.letter> | <self.symbol> | <self.function> | <self.special>)')
-def any(m) -> str: 
+def any(m) -> str:
     return str(m)
 
 @ctx.capture(rule='<self.modifiers> <self.any>')
