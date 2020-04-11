@@ -8,7 +8,7 @@ action(user.password_fill):
 	key(cmd-\)
 
 action(user.password_show):
-	key(alt-cmd-\)
+	key(cmd-alt-\)
 
 action(user.password_new):
 	key(cmd-i)

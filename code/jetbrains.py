@@ -4,6 +4,7 @@ import requests
 import time
 from pathlib import Path
 from talon import ctrl, ui, Module, Context, actions, clip
+import tempfile
 
 # Courtesy of https://github.com/anonfunc/talon-user/blob/master/apps/jetbrains.py
 
@@ -79,17 +80,18 @@ def set_extend(*commands):
     return set_inner
 
 
-def _get_nonce(port):
+def _get_nonce(port, file_prefix):
+    file_name = file_prefix + str(port)
     try:
-        with open(os.path.join("/tmp", "vcidea_" + str(port)), "r") as fh:
+        with open(os.path.join(tempfile.gettempdir(), file_name), "r") as fh:
             return fh.read()
     except FileNotFoundError as e:
         try:
             home = str(Path.home())
-            with open(os.path.join(home, "vcidea_" + str(port)), "r") as fh:
+            with open(os.path.join(home, file_name), "r") as fh:
                 return fh.read()
-        except IOError:
-            print("Could not find nonce in tmp or home")
+        except FileNotFoundError as eb:
+            print(f"Could not find {file_name} in tmp or home")
             return None
     except IOError as e:
         print(e)
@@ -101,7 +103,7 @@ def send_idea_command(cmd):
     active_app = ui.active_app()
     bundle = active_app.bundle or active_app.name
     port = port_mapping.get(bundle, None)
-    nonce = _get_nonce(port)
+    nonce = _get_nonce(port, '.vcidea_') or _get_nonce(port, 'vcidea_')
     print(f"sending {bundle} {port} {nonce}")
     if port and nonce:
         response = requests.get(

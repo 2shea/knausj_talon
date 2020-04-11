@@ -47,6 +47,7 @@ git tag list: insert("git tag list")
 git grep: insert("git grep")
 git (author | co-author): insert("git log --format='%an <%ae>' -n1 --author=")
 git [remote] add origin: insert("git remote add origin ")
+git merge <phrase>:insert("git merge {phrase}")
 
 # TODO: replace with defer
 run git status: insert("git status\n")
