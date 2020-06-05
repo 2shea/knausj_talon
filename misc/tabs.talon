@@ -9,6 +9,7 @@ app: MicrosoftEdge.exe
 app: Safari
 app: Code
 app: /terminal/
+app: com.googlecode.iterm2
 app: /jetbrains/
 app: Sublime Text
 -
