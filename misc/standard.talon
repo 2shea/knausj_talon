@@ -86,3 +86,4 @@ funny: "ha ha"
 #menu: key(alt)
 bundle: print(app.bundle())
 ack: insert("ack ")
+docs menu help: key(ctrl-alt-h)
