@@ -65,3 +65,5 @@ shell (stone | jack):
   key(alt-b)
 shell (step | jump):
   key(alt-f)
+delete word:
+  key(ctrl-w)
