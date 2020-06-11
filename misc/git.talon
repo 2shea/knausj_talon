@@ -48,6 +48,7 @@ app: Terminal
 (git | get) (author | co-author): insert("git log --format='%an <%ae>' -n1 --author=")
 (git | get) [remote] add origin: insert("git remote add origin ")
 (git | get) merge <phrase>:insert("git merge {phrase}")
+(git | get) merge interactive: insert("git merge --no-commit --no-ff")
 
 # TODO: replace with defer
 run (git | get) status: insert("git status\n")
