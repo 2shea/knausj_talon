@@ -1,5 +1,3 @@
-dragon words: "<dgnwords>"
-dragon dictation: "<phrase>"
 slap:
 	edit.line_end()
 	key(enter)
@@ -23,17 +21,6 @@ run make (durr | dear): "mkdir "
 tls: "tls"
 M D five: "md5"
 (regex | rejex): "regex"
-args:
-	insert("()")
-	key(left)
-[inside] (index | array):
-	insert("[]")
-	key(left)
-block:
-	insert("{}")
-	key(left enter enter up tab)
-empty array: "[]"
-comment see: "// "
 word queue: "queue"
 word eye: "eye"
 word iter: "iter"
@@ -46,15 +33,24 @@ word streak:
 word printf: "printf"
 word shell: "shell"
 dunder in it: "__init__"
-self taught: "self."
+args:
+	insert("()")
+	key(left)
+[inside] (index | array):
+	insert("[]")
+	key(left)
+empty array: "[]"
+list in it:
+	insert("[]")
+	key(left)
 (dickt in it | inside bracket | in bracket):
 	insert("{}")
 	key(left)
+block:
+	insert("{}")
+	key(left enter enter up tab)
 (in | inside) percent:
 	insert("%%")
-	key(left)
-list in it:
-	insert("[]")
 	key(left)
 string U T F eight:
 	insert("'utf8'")
@@ -62,16 +58,18 @@ state past: "pass"
 zoom [in]: edit.zoom_in()
 zoom out: edit.zoom_out()
 (page | scroll) up: key(pgup)
-(page | scroll) [down]: key(pgdown)
-copy: edit.copy()
-cut: edit.cut()
-paste: edit.paste()
+(page | scroll) down: key(pgdown)
+copy that: edit.copy()
+cut that: edit.cut()
+paste that: edit.paste()
 paste match: edit.paste_match_style()
-save: edit.save()
+[file] save: edit.save()
 menu help: key(cmd-shift-?)
-#spotlight: key(super)
-(undo | under | skunks): edit.undo()
-redo: edit.redo()
+file save: edit.save()
+#menu help: key(F1)
+spotlight: key(super)
+undo that: edit.undo()
+redo that: edit.redo()
 volume up: key(volup)
 volume down: key(voldown)
 mute: key(mute)

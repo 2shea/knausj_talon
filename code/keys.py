@@ -66,8 +66,8 @@ def key(m) -> str:
 ctx = Context()
 ctx.lists['self.modifier'] = {
     'command': 'cmd',
-    'control': 'ctrl',   'troll':   'ctrl',
-    'shift':   'shift',  'sky':     'shift',
+    'control': 'ctrl',   #'troll':   'ctrl',
+    'shift':   'shift',  #'sky':     'shift',
     'alt':     'alt',    'option':  'alt',
     'super':   'super',
 }
@@ -119,9 +119,12 @@ ctx.lists['self.arrow'] = {
 simple_keys = [
     'tab', 'escape', 'enter', 'space',
     'home', 'pageup', 'pagedown', 'end',
+    'insert',
 ]
+
 alternate_keys = {
-    'delete': 'backspace', 'junk': 'backspace',
+    'delete': 'backspace', 
+    #'junk': 'backspace',
     'forward delete': 'delete',
 }
 keys = {k: k for k in simple_keys}

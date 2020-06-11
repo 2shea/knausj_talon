@@ -1,9 +1,9 @@
 os: linux
 app: Firefox
+app: firefox
 -
-#todo tags
-# settings():
-	# tags = browser
+tag(): browser
+tag(): firefox
 
 #action(browser.address):
 
