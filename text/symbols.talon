@@ -1,5 +1,4 @@
 question [mark]: "?"
-tilde: "~"
 (bang | exclamation point): "!"
 dollar [sign]: "$"
 (downscore | underscore): "_"
