@@ -41,13 +41,9 @@ clean:
 (scratch | scrap):
   key(ctrl-u)
 action(edit.page_down):
-  key(command-pagedown)
+  key(ctrl-pagedown)
 action(edit.page_up):
-  key(command-pageup)
-sky:
-  key(cmd-ctrl-pageup)
-floor:
-  key(cmd-ctrl-pagedown)
+  key(ctrl-pageup)
 suspend:
   key(ctrl-z)
 resume:

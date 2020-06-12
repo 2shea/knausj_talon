@@ -54,10 +54,10 @@ go way down:
 go way up:
     edit.file_start()
 
-go page down:
+[go] page [down]:
     edit.page_down()
 
-go page up:
+[go] page up:
     edit.page_up()
 
 # selecting
