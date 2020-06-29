@@ -14,6 +14,7 @@ app: /terminal/
 app: com.googlecode.iterm2
 app: /jetbrains/
 app: Sublime Text
+tag: tabs
 -
 (open | new) tab: app.tab_open()
 last tab: app.tab_previous()
