@@ -26,7 +26,10 @@ extension_lang_map = {
     "sh": "bash",
     "go": "go",
     "js": "javascript",
-    "ts": "typescript"
+    "ts": "typescript",
+    "pl": "perl",
+    "pm": "perl",
+    "t": "perl",
 }
 
 #flag indicates whether or not the title tracking is enabled

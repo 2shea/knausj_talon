@@ -37,4 +37,5 @@ disable debug mode:
 ^force markdown$: user.code_set_language_mode("markdown")
 ^force python$: user.code_set_language_mode("python")
 ^force talon [language]$: user.code_set_language_mode("talon")
+^force (pearl | perl)$: user.code_set_language_mode("perl")
 ^clear language modes$: user.code_clear_language_mode()
