@@ -5,6 +5,7 @@ app: Terminal
 -
 (git | get) add patch: insert("git add . -p\n")
 (git | get) add: insert("git add ")
+(git | get) add everything: "git add -u\n"
 (git | get) bisect: insert("git bisect ")
 (git | get) branch: insert("git branch ")
 (git | get) checkout: insert("git checkout ")
@@ -12,6 +13,11 @@ app: Terminal
 (git | get) cherry pick: insert("git cherry-pick ")
 (git | get) clone: insert("git clone ")
 (git | get) clone clipboard:
+
+# Convenience
+git edit config: "git config --local -e\n"
+
+git clone clipboard:
   insert("git clone ")
   edit.paste()
   key(enter)
@@ -19,6 +25,7 @@ app: Terminal
 (git | get) commit: insert("git commit ")
 (git | get) diff (colour|color) words: insert("git diff --color-words ")
 (git | get) diff: insert("git diff ")
+(git | get) diff cached: insert("git diff --cached\n")
 (git | get) fetch: insert("git fetch")
 (git | get) in it: insert("git init")
 (git | get) log: insert("git log")
@@ -37,16 +44,26 @@ app: Terminal
 (git | get) rebase continue: insert("git rebase --continue")
 (git | get) rebase skip: insert("git rebase --skip")
 (git | get) remove: insert("git rm ")
+(git | get) (remove|delete) branch: insert("git branch -d ")
+(git | get) (remove|delete) remote branch: insert("git push --delete ")
 (git | get) reset: insert("git reset ")
+(git | get) reset soft: insert("git reset --soft ")
+(git | get) reset hard: "git reset --hard "
 (git | get) show: insert("git show ")
 (git | get) stash pop: insert("git stash pop")
 (git | get) stash: insert("git stash")
 (git | get) status: insert("git status")
+(git | get) stash apply: insert("git stash apply\n")
+(git | get) submodule add: insert("git submodule add ")
 (git | get) tag: insert("git tag ")
 (git | get) tag list: insert("git tag list")
 (git | get) grep: insert("git grep")
 (git | get) (author | co-author): insert("git log --format='%an <%ae>' -n1 --author=")
 (git | get) [remote] add origin: insert("git remote add origin ")
+(git | get) restore: insert("git restore ")
+(git | get) restore staged: insert("git restore --staged ")
+(git | get) remote show origin: insert("git remote show origin\n")
+(git | get) remote add upstream: insert("git remote add upstream ")
 (git | get) merge <phrase>:insert("git merge {phrase}")
 (git | get) merge interactive: insert("git merge --no-commit --no-ff")
 

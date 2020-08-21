@@ -1,7 +1,9 @@
 os: linux
 tag: terminal
 -
-tag(): file_manager
+tag(): user.file_manager
+#todo: generic tab commands
+#tag(): tabs
 action(edit.page_down):
   key(shift-pagedown)
 action(edit.page_up):
