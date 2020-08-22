@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 app: Google Chrome
 app: chrome.exe
 app: Firefox

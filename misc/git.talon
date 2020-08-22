@@ -13,9 +13,12 @@ app: Terminal
 (git | get) cherry pick: insert("git cherry-pick ")
 (git | get) clone: insert("git clone ")
 (git | get) clone clipboard:
+  insert("git clone ")
+  edit.paste()
+  key(enter)
 
 # Convenience
-git edit config: "git config --local -e\n"
+git edit config: insert("git config --local -e\n")
 
 git clone clipboard:
   insert("git clone ")
