@@ -28,6 +28,16 @@ os: mac
 and app.name: iTerm2
 """
 
+apps.iterm = """
+os:mac
+and app.name: iTerm2
+"""
+
+apps.sublime = """
+os: mac
+and app.bundle: com.sublimetext.3
+"""
+
 # linux specific apps
 apps.keepass = """
 os: linux
