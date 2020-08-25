@@ -72,7 +72,7 @@ bounce [right]: key(ctrl-alt-shift-right)
   key(cmd-l)
 
 # Editing
-comment: key(cmd-alt-/)
+comment: key(cmd-/)
 snipline: key(ctrl-shift-k)
 dup line: key(cmd-shift-d)
 up slap: key(cmd-shift-enter)
