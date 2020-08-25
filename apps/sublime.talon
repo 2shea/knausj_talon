@@ -1,7 +1,6 @@
-app: Sublime Text
-# When tags are supported
-#tags: ide
+app: sublime
 -
+tag(): user.tabs
 
 # Sublime Tools
 sidebar:
