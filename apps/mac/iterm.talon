@@ -1,6 +1,5 @@
-app: apple_terminal
+app: iterm
 -
-tag(): terminal
 tag(): user.file_manager
 action(user.file_manager_open_parent):
     insert("cd ..")
