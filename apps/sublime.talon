@@ -82,9 +82,15 @@ up slap: key(cmd-shift-enter)
 # revert requires adding key binding
 # Preferences->Key Bindings
 # [
-  # { "keys": ["ctrl+alt+r"], "command": "revert" }
+#   { "keys": ["ctrl+alt+r"], "command": "revert" }
 # ]
 revert: key(ctrl-alt-r)
+
+# requires installing GoImports Sublime package and adding custom key binding
+# [
+#   { "keys": ["f4"], "command": "go_imports" }
+# ]
+go imports: key(f4)
 
 action(edit.indent_less):
        key(cmd-[)
