@@ -33,7 +33,7 @@ git clone clipboard:
 (git | get) in it: insert("git init")
 (git | get) log: insert("git log")
 (git | get) move: insert("git mv ")
-(git | get) (new branch | checkout new): insert("git checkout -b ")
+(git | get) (new branch | checkout new): insert("git checkout -b emily/")
 (git | get) pull: insert("git pull")
 (git | get) pull origin: insert("git pull origin ")
 (git | get) pull rebase: insert("git pull --rebase")
