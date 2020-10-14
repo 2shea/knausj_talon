@@ -22,6 +22,7 @@ distraction free: key(ctrl-shift-cmd-f)
 # Code Navigation
 go file: key(cmd-t)
 go line: key(ctrl-g)
+go (definition | def): key(alt-cmd-down)
 action(app.tab_next): key(cmd-shift-])
 # action(app.tab_last): key(cmd-shift-[)
 action(app.window_open): key(shift-cmd-n)
